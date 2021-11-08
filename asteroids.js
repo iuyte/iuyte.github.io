@@ -205,9 +205,9 @@ function Asteroids() {
 	var FPS = 50;
 	
 	// units/second
-	var acc			  = 300;
-	var maxSpeed	  = 600;
-	var rotSpeed	  = 360; // one rotation per second
+	var acc		  = 400;
+	var maxSpeed	  = 750;
+	var rotSpeed	  = 600; // one rotation per second
 	var bulletSpeed	  = 1000;
 	var particleSpeed = 400;
 	
@@ -843,7 +843,7 @@ function Asteroids() {
 			drawFlame = true;
 		} else {		
 			// decrease speed of player
-			this.vel.mul(0.96);
+			this.vel.mul(0.98);
 		}
 		
 		// rotate counter-clockwise
