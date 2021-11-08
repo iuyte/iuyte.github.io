@@ -609,6 +609,7 @@ function Asteroids() {
 			font = '28pt Arial, sans-serif';
 			fontWeight = 'bold';
 			position = 'relative';
+			left = '20px';
 		}
 		this.points.className = "ASTEROIDSYEAH";
 		this.navigation.appendChild(this.points);
