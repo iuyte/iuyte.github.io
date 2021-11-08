@@ -208,15 +208,15 @@ function Asteroids() {
 	var acc			  = 300;
 	var maxSpeed	  = 600;
 	var rotSpeed	  = 360; // one rotation per second
-	var bulletSpeed	  = 700;
+	var bulletSpeed	  = 1000;
 	var particleSpeed = 400;
 	
-	var timeBetweenFire = 100; // how many milliseconds between shots
+	var timeBetweenFire = 150; // how many milliseconds between shots
 	var timeBetweenBlink = 250; // milliseconds between enemy blink
 	var timeBetweenEnemyUpdate = isIE ? 10000 : 2000;
 	var bulletRadius = 2;
-	var maxParticles = isIE ? 20 : 200;
-	var maxBullets = isIE ? 10 : 400;
+	var maxParticles = isIE ? 20 : 400;
+	var maxBullets = isIE ? 10 : 800;
 		
 	// generated every 10 ms
 	this.flame = {r: [], y: []};
