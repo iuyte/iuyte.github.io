@@ -193,7 +193,7 @@ function Asteroids() {
 		h = document.body.clientHeight;
 	}
 	
-	var playerWidth = 20, playerHeight = 30;
+	var playerWidth = 40, playerHeight = 60;
 	
 	var playerVerts = [[-1 * playerHeight/2, -1 * playerWidth/2], [-1 * playerHeight/2, playerWidth/2], [playerHeight/2, 0]];
 	
@@ -205,10 +205,10 @@ function Asteroids() {
 	var FPS = 50;
 	
 	// units/second
-	var acc		  = 400;
-	var maxSpeed	  = 750;
-	var rotSpeed	  = 600; // one rotation per second
-	var bulletSpeed	  = 1000;
+	var acc		  = 180;
+	var maxSpeed	  = 800;
+	var rotSpeed	  = 480; // 1.5 rotation per second
+	var bulletSpeed	  = 1200;
 	var particleSpeed = 400;
 	
 	var timeBetweenFire = 150; // how many milliseconds between shots
@@ -609,7 +609,6 @@ function Asteroids() {
 			font = '28pt Arial, sans-serif';
 			fontWeight = 'bold';
 			position = 'relative';
-			left = '20px';
 		}
 		this.points.className = "ASTEROIDSYEAH";
 		this.navigation.appendChild(this.points);
@@ -843,7 +842,7 @@ function Asteroids() {
 			drawFlame = true;
 		} else {		
 			// decrease speed of player
-			this.vel.mul(0.98);
+			this.vel.mul(0.99);
 		}
 		
 		// rotate counter-clockwise
