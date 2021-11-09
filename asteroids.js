@@ -206,12 +206,12 @@ function Asteroids() {
 	
 	// units/second
 	var acc		  = 340;
-	var maxSpeed	  = 860;
+	var maxSpeed	  = 940;
 	var rotSpeed	  = 480; // 1.5 rotation per second
 	var bulletSpeed	  = 1200;
 	var particleSpeed = 400;
 	
-	var timeBetweenFire = 150; // how many milliseconds between shots
+	var timeBetweenFire = 175; // how many milliseconds between shots
 	var timeBetweenBlink = 250; // milliseconds between enemy blink
 	var timeBetweenEnemyUpdate = isIE ? 10000 : 2000;
 	var bulletRadius = 3;
@@ -609,7 +609,7 @@ function Asteroids() {
 			font = '28pt Arial, sans-serif';
 			fontWeight = 'bold';
 			position = 'relative';
-			left = '20px';
+			left = '0px';
 		}
 		this.points.className = "ASTEROIDSYEAH";
 		this.navigation.appendChild(this.points);
