@@ -193,7 +193,7 @@ function Asteroids() {
 		h = document.body.clientHeight;
 	}
 	
-	var playerWidth = 40, playerHeight = 60;
+	var playerWidth = 28, playerHeight = 36;
 	
 	var playerVerts = [[-1 * playerHeight/2, -1 * playerWidth/2], [-1 * playerHeight/2, playerWidth/2], [playerHeight/2, 0]];
 	
@@ -205,8 +205,8 @@ function Asteroids() {
 	var FPS = 50;
 	
 	// units/second
-	var acc		  = 180;
-	var maxSpeed	  = 800;
+	var acc		  = 340;
+	var maxSpeed	  = 860;
 	var rotSpeed	  = 480; // 1.5 rotation per second
 	var bulletSpeed	  = 1200;
 	var particleSpeed = 400;
@@ -214,7 +214,7 @@ function Asteroids() {
 	var timeBetweenFire = 150; // how many milliseconds between shots
 	var timeBetweenBlink = 250; // milliseconds between enemy blink
 	var timeBetweenEnemyUpdate = isIE ? 10000 : 2000;
-	var bulletRadius = 2;
+	var bulletRadius = 3;
 	var maxParticles = isIE ? 20 : 400;
 	var maxBullets = isIE ? 10 : 800;
 		
